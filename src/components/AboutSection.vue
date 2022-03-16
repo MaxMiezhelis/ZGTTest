@@ -49,7 +49,7 @@ export default {
 <style lang="scss">
 .about-section {
   background-color: #FFFFFF;
-  padding-top: 88px;
+  padding-top: 98px;
   padding-bottom: 78px;
 }
 
@@ -58,6 +58,11 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+
+  @media (max-width: 991px){
+    flex-wrap: wrap;
+  }
 }
 
 .about__col {
@@ -65,6 +70,17 @@ export default {
   width: 25%;
   padding-left: 12px;
   padding-right: 12px;
+
+  @media (max-width: 991px){
+    width: 50%;
+  }
+  @media (max-width: 480px){
+    margin-top: 24px;
+    &:first-child{
+      margin-top: 0;
+    }
+    width: 100%;
+  }
 }
 
 .about__item {

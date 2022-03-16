@@ -20,8 +20,8 @@ export default {
 
 <style lang="scss">
 .contact-section{
-  padding-top: 74px;
-  padding-bottom: 80px;
+  padding-top: 135px;
+  padding-bottom: 130px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -37,6 +37,10 @@ export default {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 40px;
+
+    @media(max-width: 480px){
+    width: 100%;
+    }
 
     .btn{
       width: 100%;

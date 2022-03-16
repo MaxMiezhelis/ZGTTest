@@ -57,6 +57,10 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 991px){
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -66,6 +70,14 @@ export default {
   width: 25%;
   padding-left: 6px;
   padding-right: 6px;
+
+  @media (max-width: 991px){
+    width: 50%;
+  }
+  @media (max-width: 480px){
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .instock__item {

@@ -61,12 +61,14 @@ body{
 
 .container {
   max-width: 1310px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
+  min-width: 320px;
 }
+
+
 h1,.h1{
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -74,6 +76,16 @@ h1,.h1{
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 5px;
+
+
+  @media (max-width: 767px){
+    font-size: 47px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 42px
+  }
 }
 h2,.h2 {
   font-family: Open Sans;
@@ -85,22 +97,43 @@ h2,.h2 {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin-bottom: 74px;
-  margin-top: 80px;
-}
-h2.h2 {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    margin-bottom: 32px;
+    margin-top: -32px;
+  }
 }
+
 
 h3,.h3{
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 1.3;
   letter-spacing: 0.02em;
   color: #000000;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}
+.h4{
+  @media (max-width: 480px) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.36px;
+    line-height: 18px;
+  }
 }
 a.btn,button.btn{
   border: none;
@@ -115,6 +148,15 @@ a.btn,button.btn{
   line-height: 27px;
   color: #FFFFFF;
 
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    padding: 7px 9px;
+  }
+
   &:hover{
     background: #3BBB03;
     border-radius: 3px;
@@ -124,6 +166,21 @@ a.btn,button.btn{
     border-radius: 3px;
   }
 }
+
+.h4{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+ @media(max-width: 480px){
+  font-size: 20px;
+}
+}
+
 .form-select {
   display: block;
   width: 100%;

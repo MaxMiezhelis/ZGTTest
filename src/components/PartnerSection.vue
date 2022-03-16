@@ -41,7 +41,7 @@ export default {
 <style lang="scss">
 .partner-section {
   padding-top: 80px;
-  padding-bottom: 84px;
+  padding-bottom: 74px;
   background-color: #FFFFFF;
 }
 
@@ -50,11 +50,24 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .partner__col{
   flex: 0 0 auto;
   width: 33.3333%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 49px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .partner__img-wrapper{

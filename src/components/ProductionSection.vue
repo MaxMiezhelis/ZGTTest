@@ -23,11 +23,15 @@ export default {
     display: block;
     width: 100%;
     height: 720px;
+    @media (max-width: 480px){
+      height: 180px;
+      margin-bottom: -32px;
+    }
   }
 }
 .production-section{
-  padding-top: 78px;
-  padding-bottom: 89px;
+  padding-top: 70px;
+  padding-bottom: 75px;
   background-image: url("../assets/productionback.png");
 }
 </style>

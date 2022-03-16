@@ -13,7 +13,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.intro-section{
+.intro-section {
   padding-top: 85px;
   padding-bottom: 133px;
   background-color: #efeae6;
@@ -21,6 +21,12 @@ export default {}
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+
+  @media (max-width: 480px) {
+    background-position: center;
+  }
+
+
 
   .h3{
     max-width: 395px;

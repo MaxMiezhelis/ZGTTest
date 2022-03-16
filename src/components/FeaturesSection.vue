@@ -72,6 +72,10 @@ export default {
   width: 50%;
   padding-right: 33px;
   padding-left: 34px;
+
+  @media (max-width: 768px){
+    width: 100%;
+  }
 }
 
 .features__item {
@@ -127,6 +131,14 @@ export default {
   letter-spacing: 0.02em;
   color: #000000;
   margin: 0;
+  @media (max-width: 1320px) {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.27px;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .features__item-title {
@@ -137,6 +149,9 @@ export default {
   line-height: 33px;
   letter-spacing: 0.02em;
   color: #000000;
+  @media(max-width: 720px){
+    font-size: 20px;
+  }
 }
 
 .features__list {
@@ -153,5 +168,9 @@ export default {
   line-height: 25px;
   letter-spacing: 0.02em;
   color: #000000;
+  
+  @media (max-width: 720px) {
+    font-size: 17px;
+  }
 }
 </style>

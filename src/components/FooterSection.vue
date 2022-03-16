@@ -44,6 +44,14 @@ export default {
 .footer-section {
   padding-top: 61px;
   padding-bottom: 61px;
+
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+
+  @media (max-width: 480px) {
+  padding: 10px 0;
+}
 }
 
 .footer__row {
@@ -62,6 +70,10 @@ export default {
       max-width: 100%;
       height: auto;
       display: block;
+
+      @media (max-width: 480px){
+        width: 105px;
+      }
     }
   }
 
@@ -71,6 +83,8 @@ export default {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+
   }
 }
 
@@ -80,6 +94,11 @@ export default {
   position: relative;
   padding-left: 30px;
   margin-left: 80px;
+
+  @media (max-width: 720px) {
+    max-width: none;
+  }
+
   &:first-child{
     margin-left: 0;
   }
@@ -97,6 +116,9 @@ export default {
   }
 
   &--address {
+  @media(max-width: 720px){
+    display: none;
+  }
 
     &::before {
       background-image: url("../assets/fottermarker.svg");

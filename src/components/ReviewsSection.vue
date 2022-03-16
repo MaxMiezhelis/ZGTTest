@@ -55,6 +55,10 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width: 768px){
+    flex-wrap: wrap;
+    }
 }
 
 .review__col {
@@ -62,6 +66,12 @@ export default {
   width: 33.3333%;
   padding-left: 12px;
   padding-right: 12px;
+
+
+  @media (max-width: 768px){
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 
 .review__item {
