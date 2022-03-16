@@ -73,6 +73,7 @@ export default {
 
   @media (max-width: 991px){
     width: 50%;
+    margin-bottom: 10px;
   }
   @media (max-width: 480px){
     width: 100%;
